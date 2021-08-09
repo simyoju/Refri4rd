@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF6A275726C16F110067E518 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A275626C16F110067E518 /* HomeVC.swift */; };
+		DF6A275926C171620067E518 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A275826C171620067E518 /* ItemCell.swift */; };
 		DF9535AF26B8388300916059 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9535AE26B8388300916059 /* ItemData.swift */; };
 		DFFE25CD26AA9765004B7585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE25CC26AA9765004B7585 /* AppDelegate.swift */; };
 		DFFE25CF26AA9765004B7585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE25CE26AA9765004B7585 /* SceneDelegate.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF6A275626C16F110067E518 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DF6A275826C171620067E518 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		DF9535AE26B8388300916059 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 		DFFE25C926AA9765004B7585 /* Refri4rd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refri4rd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFE25CC26AA9765004B7585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				DFFE25D726AA9768004B7585 /* LaunchScreen.storyboard */,
 				DFFE25DA26AA9768004B7585 /* Info.plist */,
 				DF9535AE26B8388300916059 /* ItemData.swift */,
+				DF6A275626C16F110067E518 /* HomeVC.swift */,
+				DF6A275826C171620067E518 /* ItemCell.swift */,
 			);
 			path = Refri4rd;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9535AF26B8388300916059 /* ItemData.swift in Sources */,
+				DF6A275726C16F110067E518 /* HomeVC.swift in Sources */,
 				DFFE25CD26AA9765004B7585 /* AppDelegate.swift in Sources */,
 				DFFE25CF26AA9765004B7585 /* SceneDelegate.swift in Sources */,
+				DF6A275926C171620067E518 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
