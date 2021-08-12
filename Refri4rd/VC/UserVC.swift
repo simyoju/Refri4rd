@@ -10,10 +10,13 @@ import Alamofire
 
 class UserVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     var fieldEmail: UITextField!
     var fieldNickname: UITextField!
     var fieldPassword: UITextField!
+    
+    var isCalling = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +24,19 @@ class UserVC: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
+        self.view.bringSubviewToFront(self.indicatorView)
     }
     
     @IBAction func submit(_ sender: Any) {
+        if self.isCalling == true {
+            self.alert("진행중입니다. 잠시만 기다려주세요")
+            return
+        } else {
+            self.isCalling = true
+        }
+        
+        self.indicatorView.startAnimating()
+        
         let param: Parameters = [
         "email" : self.fieldEmail.text!,
         "nickname" : self.fieldNickname.text! ,
@@ -34,8 +47,10 @@ class UserVC: UIViewController {
         let call = AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default)
         
         call.responseJSON { res in
+            self.indicatorView.stopAnimating()
             guard let jsonObject = try! res.result.get() as? [String: Any] else {
-                print("error")
+                self.isCalling = false
+                self.alert("서버 호출 과정에서 오류가 발생했습니다.")
                 return
             }
         }

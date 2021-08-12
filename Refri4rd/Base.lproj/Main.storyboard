@@ -399,7 +399,7 @@
             </objects>
             <point key="canvasLocation" x="-226" y="464"/>
         </scene>
-        <!--LoginVC-->
+        <!--로그인-->
         <scene sceneID="qaW-Q2-kPd">
             <objects>
                 <viewController id="3pM-D1-7tu" customClass="LoginVC" customModule="Refri4rd" customModuleProvider="target" sceneMemberID="viewController">
@@ -450,7 +450,7 @@
                             <constraint firstItem="TWn-b1-vk3" firstAttribute="trailing" secondItem="xRf-Fb-BCB" secondAttribute="trailing" id="wxR-v2-HPz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ofh-P4-U5G"/>
+                    <navigationItem key="navigationItem" title="로그인" id="Ofh-P4-U5G"/>
                     <connections>
                         <outlet property="tableView" destination="TWn-b1-vk3" id="WAc-dG-7Tc"/>
                     </connections>
@@ -459,7 +459,7 @@
             </objects>
             <point key="canvasLocation" x="569.56521739130437" y="-901.33928571428567"/>
         </scene>
-        <!--UserVC-->
+        <!--회원 가입-->
         <scene sceneID="dkb-o9-ZlY">
             <objects>
                 <viewController id="nae-oJ-6vh" customClass="UserVC" customModule="Refri4rd" customModuleProvider="target" sceneMemberID="viewController">
@@ -485,6 +485,11 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hl6-T6-EGi">
+                                <rect key="frame" x="189" y="577" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xMQ-j5-Zc7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -494,7 +499,7 @@
                             <constraint firstItem="qLH-Ak-F0z" firstAttribute="leading" secondItem="xMQ-j5-Zc7" secondAttribute="leading" id="mHR-ph-j18"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="F96-A4-606">
+                    <navigationItem key="navigationItem" title="회원 가입" id="F96-A4-606">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="e8i-rw-mxi">
                             <connections>
                                 <action selector="submit:" destination="nae-oJ-6vh" id="2kA-mf-FHj"/>
@@ -502,12 +507,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="indicatorView" destination="hl6-T6-EGi" id="uk8-lt-XnB"/>
                         <outlet property="tableView" destination="qLH-Ak-F0z" id="8WA-92-7Fj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="de8-KS-wsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489.8550724637682" y="-901.33928571428567"/>
+            <point key="canvasLocation" x="1303" y="-901"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="Y1p-d2-MKe">
@@ -520,6 +526,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jIN-ez-GY6">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCn-DG-RLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JrK-cZ-pcm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LyL-Uc-je8">
@@ -531,7 +538,6 @@
                         <segue destination="3pM-D1-7tu" kind="relationship" relationship="rootViewController" id="9oa-El-gTj"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nCn-DG-RLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-226.08695652173915" y="-901.33928571428567"/>
         </scene>

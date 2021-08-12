@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF512F2D26C4D7260037F97B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF512F2C26C4D7260037F97B /* Utils.swift */; };
 		DF6A275726C16F110067E518 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A275626C16F110067E518 /* HomeVC.swift */; };
 		DF6A275926C171620067E518 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A275826C171620067E518 /* ItemCell.swift */; };
 		DF9535AF26B8388300916059 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9535AE26B8388300916059 /* ItemData.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF512F2C26C4D7260037F97B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DF6A275626C16F110067E518 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DF6A275826C171620067E518 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		DF9535AE26B8388300916059 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				DF6A275626C16F110067E518 /* HomeVC.swift */,
 				DF6A275826C171620067E518 /* ItemCell.swift */,
 				DFB36A2B26C42D29007C1785 /* AddItemVC.swift */,
+				DF512F2C26C4D7260037F97B /* Utils.swift */,
 			);
 			path = Refri4rd;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				DF9535AF26B8388300916059 /* ItemData.swift in Sources */,
 				DFB36A2426C41831007C1785 /* UserVC.swift in Sources */,
+				DF512F2D26C4D7260037F97B /* Utils.swift in Sources */,
 				DFB36A2926C419D1007C1785 /* LoginVC.swift in Sources */,
 				DFB36A2C26C42D29007C1785 /* AddItemVC.swift in Sources */,
 				DF6A275726C16F110067E518 /* HomeVC.swift in Sources */,
